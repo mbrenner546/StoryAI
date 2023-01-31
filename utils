@@ -1,0 +1,6 @@
+#!/bin/bash
+
+kill -9 $(lsof -t -i :5000)
+source /Users/matthewbrenner/MB/my-app/venv/bin/activate
+npm run start-backend
+npm startf
