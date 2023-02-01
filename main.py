@@ -30,6 +30,7 @@ async def create_story(name: str,
                        sport: Sport | Sport = Body(embed=True),
                        randomness: int = 50
                        ):
+
     story_builder = StoryBuilder(name=name, birthdate=birthdate, randomness=randomness)
     if best_friend.active:
         story_builder.add_story_component(best_friend)
